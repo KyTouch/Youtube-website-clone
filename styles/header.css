@@ -1,0 +1,164 @@
+.header{
+  height:55px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color:white;
+  border-bottom-width:2px;
+  border-bottom-style:solid;
+  border-bottom-color:rgb(240, 240, 240); 
+  z-index:100; 
+}
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.menu{
+  height:20px;
+  margin-left:24px;
+  margin-right:24px;
+}
+.yt-logo{
+  height:25px;
+}
+.middle-section{
+  display:flex;
+  align-items: center;
+  flex:1;
+  margin-left:70px;
+  margin-right:35px;
+  max-width:500px;
+}
+.search-bar{
+flex:1;
+width:0;
+height:36px;
+padding-left:10px;
+font-size:16px;
+box-shadow:inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+border:1px solid rgb(200, 200, 200);
+}
+.search-bar::placeholder{
+  font-size:16px;
+}
+.loop{
+  height:39px;
+  width:66px;
+  background-color:rgb(240, 240, 240);
+  border-width:1px;
+  border-style:solid;
+  border-color:rgb(200, 200, 200);
+  margin-left:-1px;
+  margin-right:10px;
+ 
+}
+.loop,
+.micro,
+.video-container,
+.grid-container,
+.bell-notif,
+.picture-container,
+.yt-logo-container
+{
+  display:flex;
+  justify-content: center;
+  position:relative;
+  align-items:center;
+  cursor:pointer;
+}
+.loop .tooltip,
+.micro .tooltip,
+.video-container .tooltip,
+.grid-container .tooltip,
+.bell-notif .tooltip,
+.picture-container .tooltip,
+.yt-logo-container .tooltip
+{
+  position:absolute;
+  background-color:rgba(100, 100, 100, 0.8);
+  color:white;
+  padding:4px 8px 4px 8px;
+  border-color:white;
+  border-width:1px;
+  border-style: solid;
+  border-radius:2px;
+  font-size:12px;
+  bottom:-15px;
+  opacity:0;
+  transition:opacity 0.15s;
+  pointer-events:none;
+  white-space: nowrap;
+}
+
+.loop:hover .tooltip,
+.micro:hover .tooltip,
+.video-container:hover .tooltip,
+.grid-container:hover .tooltip,
+.bell-notif:hover .tooltip,
+.picture-container:hover .tooltip,
+.yt-logo-container:hover .tooltip
+{
+  opacity:1;
+}
+.loop-icon{
+  height:25px;
+  
+}
+.micro{
+  background-color:rgb(245, 245, 245);
+  display:flex;
+  height:39px;
+  width:40px;
+  border-radius:20px;
+  border:none;
+  align-items: center;
+  position:relative;
+}
+.micro-icon{
+  margin-left: 1px;
+  height:25px;
+}
+.right-section{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width:180px;
+  margin-right:20px;
+  flex-shrink: 0;
+}
+.video{
+  height:28px;
+}
+.grid{
+  height:26px;
+}
+.bell{
+  height:32px;
+  border-radius:16px;
+}
+.bell-notif{
+  position:relative;
+}
+.notifications-count{
+  position:absolute;
+  top:-5px;
+  right:-10px;
+  background-color:red;
+  color:white;
+  font-size:12px;
+  padding:0 4px 0 4px;
+  border-radius:10px;
+  border-color:rgb(96, 0, 0);
+  border-style:solid;
+  border-width:2px;
+}
+.picture{
+  height:35px;
+  width:35px;
+  object-fit: cover;
+  border-radius:18px;
+}
